@@ -1,0 +1,32 @@
+header {
+    padding: 10px;
+    padding-top: 25px;
+    background-color: $couleur_blanc;
+    text-align: center;
+    box-shadow: 1px 2px 5px #999;
+}
+
+
+h1 {
+    margin: 0%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+footer {
+    padding: 20px;
+    background-color: darken($color: grey, $amount: 30%);
+    color: $couleur_blanc;
+    padding-bottom: 50px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-item {
+    padding: 2px;
+}

@@ -1,0 +1,146 @@
+.location {
+    text-align: center;
+    padding: 15px;
+    background-color: $couleur_gris;
+    font-weight: bolder;
+}
+
+.description {
+    text-align: center;
+    padding: 5%;
+    background-color: $couleur_light_gris;
+}
+
+button {
+    margin: 20px;
+    border-radius: 50px;
+    border: none;
+    padding: 12px 20px;
+    background: linear-gradient($couleur_secondaire, $couleur_primaire);
+    color: $couleur_blanc;
+}
+
+
+.fonctionnement {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+
+    &__content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+            
+        &:hover .icone {
+            color: $couleur_primaire;
+        }
+    }
+
+    &__number {
+        position: absolute;
+        padding: 2px 6px;
+        background-color: $couleur_primaire;
+        border-radius: 50%;
+        font-size: smaller;
+        color: $couleur_blanc;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 20px;
+        margin: 10px;
+        width: 300px;
+        font-weight: bolder;
+        border-radius: 15px;
+        background-color: $couleur_light_gris;
+        box-shadow: 0px 5px 5px rgba(0,0,0,0.2);
+    }
+
+
+}
+
+.restaurant {
+    background-color: $couleur_light_gris;
+    margin-top: 20px;
+    padding-bottom: 30px;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    &__item {
+        height: 200px;
+        width: 300px;
+        margin: 10px;
+        align-self: center;
+        border-radius: 15px;
+        text-decoration: none;
+        color: black;
+        overflow: hidden;
+
+        &__new {
+            position: absolute;
+            right: 60px;
+            margin-top: 20px;
+            background-color: $couleur_tertiaire;
+            padding: 8px;
+            width: 60px;
+            text-align: center;
+            font-size: small;
+            font-weight: bolder;
+            color: darken($color: $couleur_tertiaire, $amount: 50%);
+        }
+
+        &__img {
+            width: 100%;
+            height: 70%;
+            object-fit: cover;
+        }
+
+        &__text {
+            height: 30%;
+            display: flex;
+            flex-direction: column;
+            background-color: $couleur_blanc;
+
+            .item_titre {
+                font-weight: bolder;
+                margin-left: 5px;
+                padding: 5px;
+            }
+            .item_description {
+                margin-left: 5px;
+                padding: 5px;
+            }
+            .item_icone {
+                position: absolute;
+                right: 70px;
+                margin-top: 20px;
+
+                &:hover + .item_icone_full {
+                    cursor: pointer;
+                    visibility: visible;
+                }
+            }
+            .item_icone_full {
+                position: absolute;
+                right: 70px;
+                margin-top: 20px;
+                cursor: pointer;
+                background: -webkit-linear-gradient(top, $couleur_primaire 0%,$couleur_secondaire 100%); 
+                background: linear-gradient(to bottom, $couleur_primaire 0%,$couleur_secondaire 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                visibility: hidden;
+
+            }
+        }
+
+    }
+
+}
+

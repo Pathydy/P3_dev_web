@@ -1,0 +1,19 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "description": "Liste des packages",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pathydy/P3_dev_web.git"
+  },
+  "author": "Maryll DOSSOU-YOVO",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pathydy/P3_dev_web/issues"
+  },
+  "homepage": "https://github.com/Pathydy/P3_dev_web#readme"
+}
