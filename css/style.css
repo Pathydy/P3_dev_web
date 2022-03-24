@@ -11,10 +11,13 @@ body {
 
 header {
   padding: 10px;
-  padding-top: 25px;
   background-color: white;
   text-align: center;
   box-shadow: 1px 2px 5px #999;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 h1 {
@@ -23,6 +26,86 @@ h1 {
   padding-bottom: 5%;
   font-weight: bolder;
   font-size: 25px;
+}
+
+.bouton-retour {
+  border: none;
+  background: transparent;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  height: auto;
+  text-decoration: none;
+  color: black;
+}
+
+.restaurant_landing {
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  z-index: -1;
+}
+.restaurant_landing__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.restaurant_menu {
+  margin-top: 240px;
+  background-color: #f6f6f6;
+  padding: 20px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+.restaurant_menu__titre {
+  font-family: "Shrikhand";
+}
+.restaurant_menu__icone {
+  position: absolute;
+  right: 40px;
+  top: 335px;
+}
+.restaurant_menu__categorie {
+  margin-bottom: 50px;
+}
+.restaurant_menu .categorie_titre {
+  border-bottom: solid #99E2D0 3px;
+  font-size: large;
+  width: 50px;
+}
+.restaurant_menu__item {
+  background-color: white;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 20px 0px;
+  height: 50px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.restaurant_menu__item > .menu_item_titre {
+  margin: 5px 0px;
+}
+.restaurant_menu__item > .menu_item_description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.restaurant_menu__item > .menu_item_description > .menu_item_prix {
+  font-weight: bolder;
+}
+
+.commander {
+  text-align: center;
+}
+.commander__bouton {
+  margin: 20px;
+  width: 180px;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  padding: 12px 20px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: white;
 }
 
 footer {
@@ -54,7 +137,7 @@ footer {
   background-color: #f6f6f6;
 }
 
-button {
+.bouton-explorer {
   margin: 20px;
   border-radius: 50px;
   border: none;
@@ -165,8 +248,8 @@ button {
   cursor: pointer;
   background: -webkit-linear-gradient(top, #9356DC 0%, #FF79DA 100%);
   background: linear-gradient(to bottom, #9356DC 0%, #FF79DA 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
   visibility: hidden;
 }
 
